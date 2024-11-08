@@ -1,0 +1,187 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "Balsamiq Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* font-family: "Nunito", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap');
+/* font-family: "Patrick Hand", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* font-family: "Comic Neue", cursive; */
+
+
+/* quick acces */
+:root{
+    --purple-background: rgb(98, 0, 255);
+    --dark-purple-background: rgb(69, 0, 180);
+    --light-purple-background: rgb(202, 169, 255);
+}
+
+/* header */
+header{
+    background-color: white;
+    box-shadow: 2px 2px 10px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header-wraper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.width{
+    width: 85%;
+    margin: 0 auto;
+}
+.logo-a{
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+.logo-img{
+    width: 130px;
+}
+.nav-ul{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-li{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+.line-li:after{
+    content: " ";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--purple-background);
+}
+.line-li:hover:after{
+    width: 100%;
+    color: var(--purple-background);
+    transition: all 0.5s ease-out;
+}
+.register{
+    background-color: var(--purple-background);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.register:hover{
+    background-color: var(--dark-purple-background);
+}
+.log-in{
+    border: solid 2px var(--purple-background);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.2s ease;
+}
+.log-in:hover{
+    background-color: var(--light-purple-background);
+}
+.burger{
+    display: none;
+}
+
+/* hero section */
+.hero-page{
+    background-image: url(/images/hero-bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.hero-page-content-wraper{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+.hero-title{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.hero-description{
+    font-family: "Patrick Hand", cursive;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.button{
+    background-color: rgb(98, 0, 255);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--dark-purple-background);
+}
+.button-a{
+    color: white;
+}
+
+/* section 1 */
+.section1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* footer */
+footer{
+    background-color: var(--purple-background);
+}
+.footer-wraper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Nunito", sans-serif;
+}
+.footer-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+.footer-ul{
+    line-height: 3;
+}
+.footer-ul li a:hover{
+    color: white;
+}
+.footer-media{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-brands{
+    font-size: 30px;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 20px;
+}
