@@ -298,50 +298,167 @@ header{
   transition: all 0.7s ease;
 }
 
+/* pricing */
+.pricing-section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.pricing-wraper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--green);
+}
+.pricing-roof{
+    background-color: var(--green);
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pricing-roof-text{
+    color: white;
+}
+.pricing{
+    border: solid 1px var(--green);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+.pricing-plan{
+    background-color:rgb(245, 245, 245);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+.plan-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: var(--purple-background);
+}
+.pricing-box{
+    width: 100%;
+    text-align: center;
+    background-color: var(--green);
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.pricing-li{
+    line-height: 2;
+}
+.yes::after{
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 10px;
+    color: var(--green);
+    font-size: 23px;
+}
+.no::after{
+    content: "\f057";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+    color: rgb(255, 101, 101);
+    font-size: 23px;
+}
+
+/* login & register sections */
+.login-section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--purple-background);
+}
+.login-panel{
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.google-a{
+    width: 100%;
+    cursor: pointer;
+}
+.google-button{
+    width: 100%;
+    background-color: rgb(66,133,244);
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.google-logo{
+    border-radius: 3px;
+    width: 49px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.google-login-text{
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.label{
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px rgb(190, 190, 190);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.input::placeholder {
+    font-size: 20px;
+    color:  rgb(190, 190, 190);
+    font-family: "Nunito", sans-serif;
+}
+.input:focus {
+    outline: none;
+    border-color: var(--purple-background);
+    background-color: #f4f0ff;
+}
+.input-wraper{
+    position: relative;
+}
+.fa-eye, .eye-slash{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
 
 
+/* font-family: "Nunito", sans-serif;           most normal
 
+/* font-family: "Balsamiq Sans", sans-serif;    soso normal
 
+/* font-family: "Comic Neue", cursive;          normal - not normal
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* font-family: "Patrick Hand", cursive;        too much
 
 
 

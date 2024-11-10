@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tamuna Javakhadze">
+        <meta name="description" content="student accomodation for international students">
+        <meta name="keywords" content="international student accomodation georgia dormitory dorm tbilisi campus">
+    
+        <!-- for facebook -->
+        <meta property="og:url" content="https://tamo23tamuna.github.io/final-project/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="UniStay Georgia">
+        <meta property="og:description" content="Student accomodation in Tbilisi for international students">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    
+        <title>HistoScope</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</head>
+<body>
+    <header>
+        <div class="width header-wraper">
+            <a href="index.html">
+                <img src="images/Logo.png" class="logo-img">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li><a class="nav-li line-li" href ="index.html">Home</a></li>
+                    <li><a class="nav-li line-li" href ="">Lab</a></li>
+                    <li><a class="nav-li line-li" href ="">Quizes</a></li>
+                    <li><a class="nav-li line-li" href ="pricing.html">Pricing</a></li>
+                    <li><a class="nav-li log-in" href ="login.html">Log In</a></li>
+                    <li><a class="nav-li register" href ="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div>
+                    <div class="burger-line line1"></div>
+                    <div class="burger-line line2"></div>
+                    <div class="burger-line line3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="width">
+                <h1 class="green-title center">Register</h1>
+                <div class="login-panel">
+                    <a class="google-a" href=""><button class="google-button">
+                        <img class="google-logo" src="images/google-logo.png">
+                        <p class="google-login-text">REGISTER WITH GOOGLE</p>
+                    </button></a>
+
+                    <form class="form" action="/login" method="POST">
+                        <label class="label" for="first-name">First name</label>
+                        <input class="input" type="text" id="first-name" name="first-name" placeholder="your first name" required>
+
+                        <label class="label" for="last-name">Last name</label>
+                        <input class="input" type="text" id="last-name" name="last-name" placeholder="your last name" required>
+
+                        <label class="label" for="last-name">Email</label>
+                        <input class="input" type="email" id="email" name="email" placeholder="your email" required>
+
+                        <label class="label" for="username">Username</label>
+                        <input class="input" type="text" id="username" name="username" placeholder="username" required>
+                    
+                        <label class="label" for="password">Password</label>
+                        <div class="input-wraper">
+                            <input class="input" type="password" id="password1" name="password1" placeholder="password" required>
+                            <i id="show-icon1" class="fa-solid fa-eye"></i>
+                        </div>
+
+                        <label class="label" for="password">Repeat password</label>
+                        <div class="input-wraper">
+                            <input class="input" type="password" id="password2" name="password2" placeholder="repeat password" required>
+                            <i id="show-icon2" class="fa-solid fa-eye"></i>
+                        </div>
+                    
+                        <button class="button type="submit">Log In</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="width">
+        </section>
+    </main>
+
+    <footer>
+        <div class="width">
+            <div class="footer-wraper">
+                <div class="HistoScope-footer">
+                    <h2 class="footer-title">HistoScope</h2>
+                    <ul class="footer-ul">
+                        <li><a href="">For medical students</a></li>
+                        <li><a href="">For Clinicians</a></li>
+                        <li><a href="">For institutions</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="company-footer">
+                    <h2 class="footer-title">Company</h2>
+                    <ul class="footer-ul">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Press</a></li>
+                    </ul>
+                </div>
+                <div class="language-footer">
+                    <h2 class="footer-title">HistoScope in</h2>
+                    <ul class="footer-ul">
+                        <li><a href="">Georgian</a></li>
+                        <li><a href="">German</a></li>
+                        <li><a href="">French</a></li>
+                        <li><a href="">Spanish</a></li>
+                    </ul>
+                </div>
+                <div class="support-footer">
+                    <h2 class="footer-title">Support</h2>
+                    <ul class="footer-ul">
+                        <li><a href="">Latest on COVID-19</a></li>
+                        <li><a href="">Help center</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-media">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 HistoScope. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
