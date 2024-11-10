@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* font-family: "Nunito", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap');
-/* font-family: "Patrick Hand", cursive; */
+/* font-family: "Patrick Hand", cursive; */ 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* font-family: "Comic Neue", cursive; */
 
@@ -12,8 +12,64 @@
 /* quick acces */
 :root{
     --purple-background: rgb(98, 0, 255);
-    --dark-purple-background: rgb(69, 0, 180);
-    --light-purple-background: rgb(202, 169, 255);
+    --grey: rgb(68, 68, 68);
+    --dark-grey: rgb(19, 19, 19);
+    --green: rgb(0, 255, 157);
+    --light-green: rgb(168, 255, 222);
+}
+.width{
+    width: 85%;
+    margin: 0 auto;
+}
+.purple-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 50px;
+    color: var(--purple-background);
+    margin-bottom: 30px;
+}
+.green-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 50px;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+.big-text{
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    color: var(--grey);
+}
+.small-text{
+    font-family: "Comic Neue";
+    font-size: 18px;
+}
+.center{
+    text-align: center;
+}
+.button{
+    background-color: rgb(98, 0, 255);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    background-color: var(--green);
+}
+
+/* javascript */
+.slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease;
+}
+.slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* header */
@@ -33,10 +89,6 @@ header{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-.width{
-    width: 85%;
-    margin: 0 auto;
 }
 .logo-a{
     text-decoration: underline;
@@ -64,7 +116,7 @@ header{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: var(--purple-background);
+    background-color: var(--green);
 }
 .line-li:hover:after{
     width: 100%;
@@ -76,18 +128,19 @@ header{
     color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
+    transition: all 0.7s ease;
 }
 .register:hover{
-    background-color: var(--dark-purple-background);
+    background-color: var(--green);
 }
 .log-in{
     border: solid 2px var(--purple-background);
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    transition: all 0.2s ease;
+    transition: all 0.7s ease;
 }
 .log-in:hover{
-    background-color: var(--light-purple-background);
+    background-color: var(--light-green);
 }
 .burger{
     display: none;
@@ -118,29 +171,188 @@ header{
 .hero-description{
     font-family: "Patrick Hand", cursive;
     font-size: 30px;
-    margin-bottom: 50px;
-}
-.button{
-    background-color: rgb(98, 0, 255);
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    font-family: "Nunito", sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-}
-.button:hover{
-    background-color: var(--dark-purple-background);
+    margin-bottom: 20px;
 }
 .button-a{
     color: white;
 }
 
-/* section 1 */
-.section1{
+/* promote section */
+.promote-section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.promote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promote div img{
+    width: 500px;
+}
+.li-promote::before{
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: var(--green);
+    font-size: 23px;
+    line-height: 3;
+}
+
+/* team section */
+.team-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.team-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#team{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name-avatar-wraper{
+    width: 16.666%;
+    padding: 0 35px 0 35px;
+    display: flex;
+    justify-content: space-around;
+}
+.user-name{
+    margin-top: 50px;
+    font-size: 17.7px;
+    font-family: "Comic Neue";
+    color: var(--purple-background);
+    text-align: center;
+    font-weight: bold;
+}
+.avatar{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/* testimonials section */
+.testimonials-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--purple-background);
+}
+.testimonials-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.testimonial{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.testimonial img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* FAQ section */
+.faq-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.question{
+    color: var(--grey);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.answer{
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    display: none;
+}
+.active-question, .question:hover {
+  background-color: var(--green);
+  color: white;
+  transition: all 0.7s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 footer{
@@ -158,13 +370,14 @@ footer{
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 25px;
-    color: white;
+    color: var(--green);
 }
-.footer-ul{
+.footer-ul li a{
+    color: white;
     line-height: 3;
 }
 .footer-ul li a:hover{
-    color: white;
+    color: var(--green);
 }
 .footer-media{
     width: 400px;
@@ -179,7 +392,7 @@ footer{
     cursor: pointer;
 }
 .fa-brands:hover{
-    color: white;
+    color: var(--green);
 }
 .copyright{
     text-align: center;
