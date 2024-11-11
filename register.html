@@ -18,20 +18,25 @@
         <meta property="og:image" content="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
     
         <title>HistoScope</title>
+        <link rel="icon" href="images/website-logo.png" type="image/png">
+        
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/quick.css">
+        <link rel="stylesheet" href="./styles/fonts.css">
+        <link rel="stylesheet" href="./styles/js.css">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 </head>
 <body>
-    <header>
-        <div class="width header-wraper">
+    <header class="header" id="header">
+        <div class="width header-wraper" id="header-wraper">
             <a href="index.html">
                 <img src="images/Logo.png" class="logo-img">
             </a>
             <nav class="navigation">
-                <ul class="nav-ul">
+                <ul class="nav-ul" id="nav-ul">
                     <li><a class="nav-li line-li" href ="index.html">Home</a></li>
                     <li><a class="nav-li line-li" href ="">Lab</a></li>
                     <li><a class="nav-li line-li" href ="">Quizes</a></li>
@@ -40,52 +45,64 @@
                     <li><a class="nav-li register" href ="register.html">Register</a></li>
                 </ul>
             </nav>
-            <div class="burger">
-                <div>
-                    <div class="burger-line line1"></div>
-                    <div class="burger-line line2"></div>
-                    <div class="burger-line line3"></div>
-                </div>
+            <div id="burger" class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
             </div>
         </div>
     </header>
 
     <main>
+
+        <div>
+            <i class="fa-solid fa-circle-up scroll-up" id="scroll-up-button"></i>
+        </div>
+        
         <section class="login-section">
             <div class="width">
-                <h1 class="green-title center">Register</h1>
+                <h1 class="white-title center">Register</h1>
                 <div class="login-panel">
                     <a class="google-a" href=""><button class="google-button">
                         <img class="google-logo" src="images/google-logo.png">
                         <p class="google-login-text">REGISTER WITH GOOGLE</p>
                     </button></a>
 
-                    <form class="form" action="/login" method="POST">
-                        <label class="label" for="first-name">First name</label>
-                        <input class="input" type="text" id="first-name" name="first-name" placeholder="your first name" required>
+                    <form action="" class="form" id="form" method="POST">
+                        <label class="label">First name</label>
+                        <input class="input" type="text" id="first-name" name="firstname" placeholder="your first name">
+                        <p class="error" id="error_firstname"></p>
 
-                        <label class="label" for="last-name">Last name</label>
-                        <input class="input" type="text" id="last-name" name="last-name" placeholder="your last name" required>
+                        <label class="label" >Last name</label>
+                        <input class="input" type="text" id="last-name" name="lastname" placeholder="your last name">
+                        <p class="error" id="error_lastname"></p>
 
-                        <label class="label" for="last-name">Email</label>
-                        <input class="input" type="email" id="email" name="email" placeholder="your email" required>
+                        <label class="label" >Email</label>
+                        <input class="input" type="email" id="email" name="email" placeholder="your email">
+                        <p class="error" id="error_email"></p>
+                        <p class="error" id="error-email"></p>
 
-                        <label class="label" for="username">Username</label>
-                        <input class="input" type="text" id="username" name="username" placeholder="username" required>
+                        <label class="label">Username</label>
+                        <input class="input" type="text" id="username" name="username" placeholder="username">
+                        <p class="error" id="error_username"></p>
+                        <p class="error" id="error-username"></p>
                     
-                        <label class="label" for="password">Password</label>
+                        <label class="label">Password</label>
                         <div class="input-wraper">
-                            <input class="input" type="password" id="password1" name="password1" placeholder="password" required>
+                            <input class="input" type="password" id="password" name="password" placeholder="password">
                             <i id="show-icon1" class="fa-solid fa-eye"></i>
                         </div>
+                        <p class="error" id="error_password"></p>
+                        <p class="error" id="error-password"></p>
 
-                        <label class="label" for="password">Repeat password</label>
+                        <label class="label">Repeat password</label>
                         <div class="input-wraper">
-                            <input class="input" type="password" id="password2" name="password2" placeholder="repeat password" required>
+                            <input class="input" type="password" id="password2" name="password2" placeholder="repeat password">
                             <i id="show-icon2" class="fa-solid fa-eye"></i>
                         </div>
+                        <p class="error" id="error_password2"></p>
                     
-                        <button class="button type="submit">Log In</button>
+                        <button class="button" type="submit">Log In</button>
                     </form>
                 </div>
             </div>
@@ -147,6 +164,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="register.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>

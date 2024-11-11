@@ -1,0 +1,13 @@
+.header.toggle-header{
+    height: 100vh;
+}
+.nav-ul.toggle-nav-ul{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+.header-wraper.toggle-header-wraper{
+    flex-direction: column;
+    padding-top: 20px;
+}

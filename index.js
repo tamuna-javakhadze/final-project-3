@@ -1,5 +1,3 @@
-'use strict'
-
 // team
 let currentPage = 1;
 let post = document.getElementById("team");
@@ -53,18 +51,3 @@ loadMore.addEventListener("click", function(){
 });
 
 getUsers(currentPage);
-
-
-// on scroll slide up
-document.addEventListener("scroll", function() {
-    const elements = document.querySelectorAll(".slide-up");
-  
-    elements.forEach((element) => {
-      const position = element.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-  
-      if (position < windowHeight - 50) { // Adjust the threshold as needed
-        element.classList.add("active");
-      }
-    });
-});

@@ -7,31 +7,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Tamuna Javakhadze">
-        <meta name="description" content="student accomodation for international students">
-        <meta name="keywords" content="international student accomodation georgia dormitory dorm tbilisi campus">
+        <meta name="description" content="Histology study website for students and professionals">
+        <meta name="keywords" content="histology anatomy microscopic anatomy histology study">
     
         <!-- for facebook -->
-        <meta property="og:url" content="https://tamo23tamuna.github.io/final-project/">
+        <meta property="og:url" content="">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="UniStay Georgia">
-        <meta property="og:description" content="Student accomodation in Tbilisi for international students">
-        <meta property="og:image" content="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <meta property="og:title" content="HistoScope">
+        <meta property="og:description" content="histology lectures, slides and articles, all in one platform">
+        <meta property="og:image" content="">
     
         <title>HistoScope</title>
+        <link rel="icon" href="images/website-logo.png" type="image/png">
+
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/quick.css">
+        <link rel="stylesheet" href="./styles/fonts.css">
+        <link rel="stylesheet" href="./styles/js.css">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 </head>
 <body>
-    <header>
-        <div class="width header-wraper">
+    <header class="header" id="header">
+        <div class="width header-wraper" id="header-wraper">
             <a href="index.html">
                 <img src="images/Logo.png" class="logo-img">
             </a>
             <nav class="navigation">
-                <ul class="nav-ul">
+                <ul class="nav-ul" id="nav-ul">
                     <li><a class="nav-li line-li" href ="index.html">Home</a></li>
                     <li><a class="nav-li line-li" href ="">Lab</a></li>
                     <li><a class="nav-li line-li" href ="">Quizes</a></li>
@@ -40,17 +45,20 @@
                     <li><a class="nav-li register" href ="register.html">Register</a></li>
                 </ul>
             </nav>
-            <div class="burger">
-                <div>
-                    <div class="burger-line line1"></div>
-                    <div class="burger-line line2"></div>
-                    <div class="burger-line line3"></div>
-                </div>
+            <div id="burger" class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
             </div>
         </div>
     </header>
 
     <main>
+
+        <div id="scroll-up-button">
+            <i class="fa-solid fa-circle-up scroll-up"></i>
+        </div>
+
         <section class="hero-page">
             <div class="hero-page-content-wraper">
                 <h1 class="hero-title">Learn histology</h1>
@@ -217,10 +225,6 @@
                 </div>
             </div>
         </section>
-
-        <section>
-
-        </section>
     </main>
 
     <footer>
@@ -277,6 +281,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>
