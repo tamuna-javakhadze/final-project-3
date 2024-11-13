@@ -19,7 +19,7 @@
     
         <title>HistoScope</title>
         <link rel="icon" href="images/website-logo.png" type="image/png">
-        
+
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/quick.css">
         <link rel="stylesheet" href="./styles/fonts.css">
@@ -57,55 +57,18 @@
         <div>
             <i class="fa-solid fa-circle-up scroll-up" id="scroll-up-button"></i>
         </div>
-        
-        <section class="login-section">
+
+        <section class="filter-section">
             <div class="width">
-                <h1 class="white-title center">Register</h1>
-                <div class="login-panel">
-                    <a class="google-a" href=""><button class="google-button">
-                        <img class="google-logo" src="images/google-logo.png">
-                        <p class="google-login-text">REGISTER WITH GOOGLE</p>
-                    </button></a>
-
-                    <form action="" class="form" id="form" method="POST">
-                        <label class="label">First name</label>
-                        <input class="input" type="text" id="first-name" name="firstname" placeholder="your first name">
-                        <p class="error" id="error_firstname"></p>
-
-                        <label class="label" >Last name</label>
-                        <input class="input" type="text" id="last-name" name="lastname" placeholder="your last name">
-                        <p class="error" id="error_lastname"></p>
-
-                        <label class="label" >Email</label>
-                        <input class="input" type="email" id="email" name="email" placeholder="your email">
-                        <p class="error" id="error_email"></p>
-                        <p class="error" id="error-email"></p>
-
-                        <label class="label">Username</label>
-                        <input class="input" type="text" id="username" name="username" placeholder="username">
-                        <p class="error" id="error_username"></p>
-                        <p class="error" id="error-username"></p>
-                    
-                        <label class="label">Password</label>
-                        <div class="input-wraper">
-                            <input class="input" type="password" id="password" name="password" placeholder="password">
-                            <i id="show-icon1" class="fa-solid fa-eye"></i>
-                        </div>
-                        <p class="error" id="error_password"></p>
-                        <p class="error" id="error-password"></p>
-
-                        <label class="label">Repeat password</label>
-                        <div class="input-wraper">
-                            <input class="input" type="password" id="password2" name="password2" placeholder="repeat password">
-                            <i id="show-icon2" class="fa-solid fa-eye"></i>
-                        </div>
-                        <p class="error" id="error_password2"></p>
-                    
-                        <button class="button" type="submit">Log In</button>
-                    </form>
+                <h1 class="purple-title center">Search for histological slides</h1>
+                <div class="filter-input">
+                    <input type="text" class="input" id="filter-input" placeholder="search">
+                    <button class="filter-button">Enter</button>
                 </div>
+                <diV class="filter-result">
+
+                </diV>
             </div>
-            <hr class="width">
         </section>
     </main>
 
@@ -163,7 +126,7 @@
             </div>
         </div>
     </footer>
-    <script src="register.js"></script>
+    <script src="lab.js"></script>
     <script src="all.js"></script>
 </body>
 </html>

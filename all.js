@@ -18,7 +18,7 @@ let scrollUpButton = document.getElementById("scroll-up-button");
 scrollUpButton.style.display = "none";
 
 document.addEventListener("scroll", function(){
-    if(window.scrollY > 300){
+    if(window.scrollY > 100){
         scrollUpButton.style.display = "block";
     }else{
         scrollUpButton.style.display = "none";
