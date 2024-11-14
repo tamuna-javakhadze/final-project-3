@@ -1,0 +1,184 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "url": "https://media-us.amboss.com/media/thumbs/big_57062186d95c8.jpg",
+            "title": "Epithelial tissue",
+            "description": "Epithelial tissue forms the outer layer of body surfaces and lines internal cavities and organs. It is categorized by cell shape (squamous, cuboidal, columnar) and layer arrangement (simple, stratified, pseudostratified). Epithelia serve various functions including protection, absorption, secretion, and filtration. They are avascular but supported by an underlying basement membrane, which separates them from connective tissue. Specialized junctions like tight junctions, desmosomes, and gap junctions enable cells to function cohesively."
+        },
+        {
+            "id": 2,
+            "url": "https://images.fineartamerica.com/images-medium-large-5/3-areolar-connective-tissue-lm-science-stock-photography.jpg",
+            "title": "Connective tissue",
+            "description": "Connective tissue supports, binds, and protects other tissues and organs, with types including loose, dense, cartilage, bone, blood, and adipose. It consists of cells (fibroblasts, macrophages) embedded in an extracellular matrix of fibers (collagen, elastin) and ground substance. Loose connective tissue fills spaces between organs, while dense connective tissue provides tensile strength (e.g., tendons, ligaments). Connective tissue is highly diverse, playing roles in structural support, transport, and energy storage."
+        },
+        {
+            "id": 3,
+            "url": "https://www.pathologyoutlines.com/imgau/softtissuesmoothmuscleAli03.jpg",
+            "title": "Muscle tissue",
+            "description": "Muscle tissue is specialized for contraction and is classified into three types: skeletal, cardiac, and smooth. Skeletal muscle is striated, multinucleated, and voluntary, allowing body movement. Cardiac muscle is also striated but contains intercalated discs for synchronized contractions in the heart. Smooth muscle is non-striated, found in hollow organs, and controls involuntary movements like peristalsis. Each type of muscle tissue is rich in actin and myosin filaments, which enable contraction."
+        },
+        {
+            "id": 4,
+            "url": "https://eugraph.com/histology/nervous/nervimag/crdsm400.jpg",
+            "title": "Nervous tissue",
+            "description": "Nervous tissue consists of neurons and glial cells, specialized for communication and signal transmission. Neurons have a cell body, dendrites that receive signals, and an axon that transmits impulses. Glial cells, such as astrocytes, oligodendrocytes, and Schwann cells, provide structural and metabolic support to neurons. Nervous tissue forms the brain, spinal cord, and peripheral nerves, enabling complex processes like sensation, thought, and motor control. Synapses, where neurons connect, allow for the propagation of electrical and chemical signals."
+        },
+        {
+            "id": 5,
+            "url": "https://histology-online.com/wp-content/uploads/2023/03/Bone.jpg",
+            "title": "Bone",
+            "description": "Bone is a mineralized connective tissue that provides structural support and protection. It consists of osteocytes (bone cells) within lacunae, organized into concentric layers called lamellae around central Haversian canals. Osteoblasts build bone matrix, while osteoclasts resorb it, enabling bone remodeling. Compact bone is dense and forms the outer layer, while spongy bone, with trabeculae, is lighter and found at the ends of long bones. The bone matrix, rich in calcium phosphate, gives bone its strength and rigidity."
+        },
+        {
+            "id": 6,
+            "url": "https://brightspotcdn.byu.edu/7d/23/21ff7e63475482a13d7a86cf3503/hyaline-cartilage-20x.jpg",
+            "title": "Cartilage",
+            "description": "Cartilage is a flexible connective tissue that provides support and cushioning in joints, respiratory structures, and between bones. It is avascular and contains chondrocytes housed in lacunae within a matrix of collagen and elastin fibers, which give it resilience and flexibility. There are three types: hyaline (found in joints and trachea), elastic (in the ear and epiglottis), and fibrocartilage (in intervertebral discs). Cartilage's resilience allows it to withstand compression while maintaining structure."
+        },
+        {
+            "id": 7,
+            "url": "https://qph.cf2.quoracdn.net/main-qimg-8c5533c4f4f54a1a689df9cd3cc8c410-lq",
+            "title": "Adipose tissue",
+            "description": "Adipose tissue, or fat tissue, is a type of connective tissue that stores energy, provides insulation, and protects organs. It consists mainly of adipocytes, large cells filled with lipid droplets, which push the nucleus to the cell's periphery. White adipose tissue stores energy and insulates, while brown adipose tissue, rich in mitochondria, generates heat. Adipose tissue is found subcutaneously and around organs, serving both metabolic and structural roles in the body."
+        },
+        {
+            "id": 8,
+            "url": "https://s3.us-east-2.amazonaws.com/yalehistology/skin/skin_layers.jpg",
+            "title": "Skin",
+            "description": "The skin consists of three main layers: the epidermis, dermis, and hypodermis. The epidermis is a keratinized stratified squamous epithelium, providing a protective barrier. Below it, the dermis contains dense connective tissue, blood vessels, nerve endings, and skin appendages such as sweat glands and hair follicles. The hypodermis, primarily adipose tissue, provides insulation and attaches the skin to underlying structures. Melanocytes within the epidermis produce melanin, contributing to skin pigmentation and UV protection."
+        },
+        {
+            "id": 9,
+            "url": "https://digitalhistology.org/wp-content/uploads/h5p/content/29/images/file-5b43a8a5368e8.jpg",
+            "title": "Eye",
+            "description": "The eye is composed of multiple layers, including the outer fibrous layer (cornea and sclera), the vascular layer (choroid, ciliary body, iris), and the inner sensory layer (retina). The cornea, a transparent layer, focuses light onto the retina and is composed of stratified epithelium and a thick stroma. The retina contains photoreceptor cells, ganglion cells, and a pigmented layer, converting light into neural signals. The lens, a biconvex structure, adjusts to focus light at various distances. The vitreous and aqueous humor provide structural support and nutrient transport."
+        },
+        {
+            "id": 10,
+            "url": "https://medcell.org/histology/sensory_systems_lab/images/retina.jpg",
+            "title": "Retina",
+            "description": "The retina is a multilayered sensory tissue that lines the back of the eye and is responsible for light detection and image formation. It contains photoreceptor cells (rods for low light and cones for color vision) in the outermost layer. The middle layers consist of bipolar, horizontal, and amacrine cells, which process and integrate visual information. Ganglion cells in the innermost layer send signals to the brain through the optic nerve. The retina also has supporting cells, like Müller cells, that help maintain structural and functional integrity."
+        },
+        {
+            "id": 11,
+            "url": "https://histology-online.com/wp-content/uploads/2023/03/Urinary-system.jpg",
+            "title": "Kidneys",
+            "description": "Kidneys are made up of functional units called nephrons, each containing a glomerulus and renal tubules. The glomerulus is a network of capillaries surrounded by Bowman's capsule, where blood filtration begins. The renal tubules are lined with cuboidal epithelium, responsible for reabsorbing water and ions back into the blood. Collecting ducts merge to form the renal pelvis, transporting urine to the ureter. The kidneys are surrounded by a fibrous capsule and have a highly organized cortex and medulla structure."
+        },
+        {
+            "id": 12,
+            "url": "https://www.aasld.org/sites/default/files/styles/lfn_article_image/public/lfn_migrated/wp-content/uploads/2020/06/Figure6.png?itok=TH6b2Xwa",
+            "title": "Liver",
+            "description": "The liver is organized into hexagonal lobules with a central vein at the core. Hepatocytes, the liver's main cells, are arranged in plates radiating from the central vein and are involved in metabolic processes like detoxification and protein synthesis. Blood flows through sinusoids, specialized capillaries lined by endothelial cells and Kupffer cells (resident macrophages) that remove pathogens and debris. The portal triad, containing a branch of the hepatic artery, portal vein, and bile duct, is located at each lobule corner. Bile produced by hepatocytes flows into bile ducts, aiding in digestion."
+        },
+        {
+            "id": 13,
+            "url": "https://medcell.org/histology/gi_tract_lab/images/stomach_pylorus.jpg",
+            "title": "Stomach",
+            "description": "The stomach wall is lined by a mucosa with simple columnar epithelium, containing gastric pits and glands. These glands have various cell types: parietal cells that secrete hydrochloric acid, chief cells that produce pepsinogen, and mucous cells for protective mucus. The submucosa supports the mucosa and contains blood vessels and nerves. The muscularis externa, with three muscle layers (longitudinal, circular, and oblique), helps in the churning of food. The outer serosa is a connective tissue layer that attaches the stomach to surrounding structures."
+        },
+        {
+            "id": 14,
+            "url": "https://www.pathologyoutlines.com/imgau/smallbowelnormalhistologyMicroOjukwu2.jpg",
+            "title": "Small intestine",
+            "description": "The small intestine has three main regions: duodenum, jejunum, and ileum, each with unique structures to enhance nutrient absorption. The mucosa is lined with simple columnar epithelium, featuring villi and microvilli to increase surface area for absorption. Crypts of Lieberkühn are found between villi and house stem cells and enterocytes. The muscularis externa consists of two layers of smooth muscle that aid in peristalsis, while the serosa provides an outer protective layer. Peyer's patches in the ileum are lymphoid nodules that support immune function."
+        },
+        {
+            "id": 15,
+            "url": "https://www.nature-microscope-photo-video.com/pub/media/catalog/product/cache/0bbf10ac3a760b9ee8ab2ee5272ed73d/0/1/010505c0202050808previewen-08f.jpg",
+            "title": "Large intestine",
+            "description": "The large intestine absorbs water and salts, transforming liquid chyme into feces. Its mucosa is lined with simple columnar epithelium, with numerous goblet cells that secrete mucus for lubrication. There are no villi, but the mucosa forms deep crypts of Lieberkühn, which house cells involved in absorption and immune defense. The muscularis externa has three distinct bands of smooth muscle called taeniae coli, which help in moving the contents. The serosa surrounds the outer surface, contributing to its structure."
+        },
+        {
+            "id": 16,
+            "url": "https://medcell.org/histology/gi_tract_lab/images/esophagus.jpg",
+            "title": "Esophagus",
+            "description": "The esophagus is a muscular tube that connects the pharynx to the stomach and functions in the transport of food. Its mucosa is lined with non-keratinized stratified squamous epithelium, which provides protection against abrasion. Beneath the epithelium, the submucosa contains mucus-secreting glands to lubricate the passage of food. The muscularis externa consists of both skeletal and smooth muscle, allowing voluntary and involuntary control over swallowing. The outer adventitia anchors the esophagus to surrounding tissues."
+        },
+        {
+            "id": 17,
+            "url": "https://histology.medicine.umich.edu/sites/default/files/images/slides/16oral.jpg",
+            "title": "Tongue",
+            "description": "The tongue is composed of skeletal muscle covered by a mucous membrane. Its dorsal surface has a variety of papillae (filiform, fungiform, circumvallate), each housing taste buds for gustatory sensation. The epithelium of the tongue is stratified squamous, with keratinization present in some areas for protection. The muscles within the tongue are organized in different planes, enabling precise movement for speech and swallowing. The ventral surface is smooth and contains a thin layer of non-keratinized epithelium."
+        },
+        {
+            "id": 18,
+            "url": "https://www.shutterstock.com/image-photo/red-blood-cell-smear-on-600nw-1421837909.jpg",
+            "title": "Blood",
+            "description": "Blood is a specialized connective tissue composed of plasma (the liquid matrix) and formed elements: erythrocytes, leukocytes, and platelets. Erythrocytes (red blood cells) are responsible for oxygen transport via hemoglobin. Leukocytes (white blood cells) provide immune defense and are categorized into granulocytes and agranulocytes. Platelets, or thrombocytes, play a crucial role in blood clotting. Blood circulates throughout the body, delivering oxygen and nutrients while removing waste."
+        },
+        {
+            "id": 19,
+            "url": "https://histology.medicine.umich.edu/sites/default/files/images/slides/6blood.jpg",
+            "title": "Red bone marrow",
+            "description": "Found within the cavities of spongy bone, red bone marrow is responsible for producing blood cells. It contains hematopoietic stem cells, which give rise to erythrocytes, leukocytes, and platelets. The stroma consists of a network of reticular cells and fibers that support the developing blood cells. Blood sinusoids allow mature cells to enter circulation. Bone marrow is highly vascularized, enabling efficient transport of nutrients and waste products."
+        },
+        {
+            "id": 20,
+            "url": "https://medcell.org/histology/immune_system_lab/images/thymus_lobule.jpg",
+            "title": "Thymus",
+            "description": "The thymus is divided into lobules, each with a cortex and medulla. The cortex contains immature T cells (thymocytes) that undergo selection processes, surrounded by epithelial cells and macrophages. The medulla houses mature T cells and has structures called Hassall's corpuscles, composed of concentric layers of epithelial cells. The thymus is essential for T cell maturation and immune function, particularly in early life. The organ is encapsulated by connective tissue, which extends into septa dividing the lobules."
+        },
+        {
+            "id": 21,
+            "url": "https://medcell.org/histology/immune_system_lab/images/spleen.jpg",
+            "title": "Spleen",
+            "description": "The spleen is surrounded by a connective tissue capsule that extends trabeculae into the organ. It has two main areas: red pulp, which filters old or damaged red blood cells, and white pulp, which contains lymphocytes and supports immune responses. The red pulp consists of splenic cords and sinusoids, where blood flows slowly, allowing macrophages to remove debris. The white pulp surrounds central arteries and resembles lymphoid tissue, with B and T cells organized in follicles and periarteriolar lymphoid sheaths. The spleen also stores platelets and serves as a blood reservoir."
+        },
+        {
+            "id": 22,
+            "url": "https://histologyblog.com/wp-content/uploads/2012/04/lno-annotated-lp.jpg?w=584",
+            "title": "Lymphoid nodule",
+            "description": "Lymphoid nodules are unencapsulated clusters of lymphocytes found in mucosal tissues, particularly in the respiratory and digestive tracts. They contain predominantly B cells in germinal centers and T cells in surrounding areas. The nodules are involved in local immune responses by capturing and presenting antigens. Germinal centers in the nodules allow for the proliferation and differentiation of B cells. They are important components of MALT (mucosa-associated lymphoid tissue), such as Peyer's patches in the intestines."
+        },
+        {
+            "id": 23,
+            "url": "https://www.pathologyoutlines.com/imgau/lungnontumorhistologyhashimoto04.jpg",
+            "title": "Lungs",
+            "description": "The lungs contain alveoli, which are tiny air sacs lined with simple squamous epithelium for gas exchange. The respiratory bronchioles lead to alveolar ducts and sacs, where oxygen and carbon dioxide are exchanged across the alveolar-capillary membrane. Type II alveolar cells produce surfactant, which reduces surface tension and prevents alveolar collapse. Larger airways are lined by ciliated pseudostratified epithelium and contain mucus-producing goblet cells. The lungs are supported by elastic and collagen fibers, enabling expansion and recoil."
+        },
+        {
+            "id": 24,
+            "url": "https://www.pathologyoutlines.com/imgau/bladderhistologyParwani03.jpg",
+            "title": "Urinary bladder",
+            "description": "The bladder wall is lined by transitional epithelium, which allows it to expand as it fills with urine. Beneath the epithelium lies a lamina propria with connective tissue, blood vessels, and nerves. The muscular layer, called the detrusor muscle, consists of smooth muscle arranged in multiple layers, which contracts to expel urine. The outer adventitia anchors the bladder to surrounding tissues, except on the superior surface, which has a serosa. The bladder's specialized structure allows for both storage and controlled release of urine."
+        },
+        {
+            "id": 25,
+            "url": "https://histology.siu.edu/ssb/images/NM018b.jpg",
+            "title": "Heart",
+            "description": "The heart wall consists of three layers: endocardium, myocardium, and epicardium. The myocardium is composed of cardiac muscle cells (cardiomyocytes) with intercalated discs, which allow synchronized contractions. The endocardium is a thin layer of endothelial cells that lines the heart chambers, while the epicardium is a connective tissue layer containing fat, vessels, and nerves. Valves, also lined by endocardium, control blood flow between chambers and major vessels. Coronary arteries supply oxygenated blood to the myocardium."
+        },
+        {
+            "id": 26,
+            "url": "https://cdn.lecturio.com/assets/Cross-section-of-artery-and-vein-1200x844.jpg",
+            "title": "Blood vessels",
+            "description": "Blood vessels have three layers: the innermost layer, the tunica intima, consists of endothelial cells that regulate blood flow and permeability. The middle layer, the tunica media, contains smooth muscle and elastic fibers, enabling vasoconstriction and vasodilation to regulate blood pressure. The outer layer, the tunica adventitia, is made of connective tissue that anchors the vessel to surrounding tissues. Arteries have thicker walls compared to veins to withstand higher pressure, while veins contain valves to prevent backflow. Capillaries are the smallest vessels and have a single layer of endothelial cells for efficient nutrient and gas exchange."
+        },
+        {
+            "id": 27,
+            "url": "https://medcell.org/histology/nervous_system_lab/images/spinal_cord.jpg",
+            "title": "Spinal cord",
+            "description": "The spinal cord has an outer white matter containing myelinated axons and an inner gray matter composed of neuron cell bodies and glial cells. The gray matter is arranged in an H-shaped configuration, with dorsal (sensory) and ventral (motor) horns. The central canal runs through the spinal cord, filled with cerebrospinal fluid. Meninges, including the dura mater, arachnoid mater, and pia mater, surround the spinal cord for protection. The spinal cord conducts sensory and motor information between the body and brain."
+        },
+        {
+            "id": 28,
+            "url": "https://medicine.nus.edu.sg/pathweb/wp-content/uploads/2021/06/Cerebellum-low-3.jpg",
+            "title": "Cerebellum",
+            "description": "The cerebellum has a highly organized structure with an outer gray matter layer (cerebellar cortex) and an inner white matter core. The cerebellar cortex contains three layers: the molecular layer (with parallel fibers and dendrites of Purkinje cells), the Purkinje cell layer (where Purkinje cells regulate motor coordination), and the granular layer (composed of tightly packed granule cells). The white matter consists of myelinated axons that carry signals between different parts of the cerebellum and other brain regions. The cerebellum plays a critical role in motor control, coordination, and balance."
+        },
+        {
+            "id": 29,
+            "url": "https://cdn.lecturio.com/assets/Cross-sectional-histologic-view-of-the-ureter-1200x1006.jpg",
+            "title": "Ureter",
+            "description": "The ureter is a muscular tube that transports urine from the kidneys to the bladder. Its mucosa is lined with transitional epithelium, which allows for stretching as urine passes through. The muscularis consists of smooth muscle, arranged in two layers: an inner longitudinal and outer circular layer that help propel urine via peristalsis. The outer adventitia consists of connective tissue that provides structural support. The ureter also has a distinctive circular, folded appearance when empty, which straightens out as it fills with urine."
+        },
+        {
+            "id": 30,
+            "url": "https://www.pathologyoutlines.com/imgau/urethranormalchavezzynger05.jpg",
+            "title": "Urethra",
+            "description": "The urethra is a tubular structure that conveys urine from the bladder to the outside of the body. It is lined by transitional epithelium near the bladder and changes to stratified squamous epithelium at its distal end. The mucosa also contains mucus-secreting glands that help protect the lining from the flow of urine. The muscularis is composed of smooth muscle, which is responsible for the voluntary and involuntary control of urination. The urethra's structure varies between males and females, with the male urethra also serving a reproductive function."
+        }
+    ]
+}

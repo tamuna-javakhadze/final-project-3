@@ -517,7 +517,7 @@
     font-family: "Comic Neue", cursive;
 }
 
-/* filter */
+/* lab section */
 .filter-section{
     padding-top: 100px;
     padding-bottom: 50px;
@@ -527,6 +527,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .filter-button{
     background-color: rgb(98, 0, 255);
@@ -540,8 +541,32 @@
     transition: all 0.5s ease;
     margin-left: 20px;
 }
-.filter-result{
-    height: 60vh;
+.slide-box{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.slide-box.hide{
+    display: none;
+}
+.slide-img{
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+.slide-img:hover{
+    scale: 1.2;
+}
+.slide-div{
+    margin-left: 50px;
+}
+.slide-title{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
 }
 
 /* font-family: "Nunito", sans-serif;           most normal
