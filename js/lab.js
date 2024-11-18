@@ -55,8 +55,6 @@ function loadSlides() {
 loadSlides();
 
 // filter
-const inputFilter = document.getElementById('filter-input');
-
 function filterSlides (searchItem){
     listItems.forEach(item => {
         if(item.innerText.toLowerCase().includes(searchItem.trim(' ').toLowerCase())){
@@ -65,8 +63,11 @@ function filterSlides (searchItem){
             item.classList.add('hide');
         }
     })
-}
+};
 
-inputFilter.addEventListener('keyup', function(){
-    filterSlides(this.value);
+const filterButton = document.getElementById('filter-button');
+
+filterButton.addEventListener('click', function(){
+    const inputValue = document.getElementById("filter-input").value;
+    filterSlides(inputValue);
 });

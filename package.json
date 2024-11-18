@@ -20,5 +20,8 @@
   "homepage": "https://github.com/tamuna-javakhadze/final-project-3#readme",
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }

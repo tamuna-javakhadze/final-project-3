@@ -47,7 +47,7 @@ function createDots(){
 
 function slide(){
     sliderContent.innerHTML = " ";
-    const slideItem = createDiv(data[sliderIndex]);
+    const slideItem = createDiv();
     const imgTag = createImg(data[sliderIndex]);
     const dotsTag = createDots();
 
@@ -131,12 +131,98 @@ function getUsers(page){
     }
 });
 }
+getUsers(currentPage);
+
 // load more
 let loadMore = document.getElementById("loadmore");
+
 loadMore.addEventListener("click", function(){
-    currentPage++;
-    getUsers(currentPage);
-    loadMore.remove();
+    if(currentPage === 1){
+        currentPage++;
+        getUsers(currentPage);
+        loadMore.innerText = "Load less";
+    }else if(currentPage === 2){
+        document.getElementById("team").innerHTML = " ";
+        currentPage--;
+        getUsers(currentPage);
+        loadMore.innerText = "Load more";
+    }
 });
 
-getUsers(currentPage);
+// accordion
+const accordion = document.getElementById("accordion");
+
+function fetchFnc(url, callback) {
+    fetch(url, { method: 'GET' })
+        .then(response => {
+            if (!response.ok) {
+                throw response.status;
+            }
+            return response.json();
+        })
+        .then(parsedData => callback(parsedData))
+        .catch( (error) => {
+            if (error) {
+                let pError = document.createElement("p");
+                pError.classList.add("green-title", "center");
+                pError.textContent = "Page Not Found - 404 error";
+                document.getElementById("accordion").appendChild(pError);
+            }
+        });
+}
+
+fetchFnc('https://jsonplaceholder.typicode.com/posts', function (data) {
+    const limitedData = data.slice(0, 12);
+    limitedData.forEach(item => createPost(item));
+});
+
+function createPost(item){
+    const question = document.createElement('div');
+    question.classList.add('question');
+    question.setAttribute('data-id', item.id);
+    question.innerText = `${item.title}?`;
+    
+    accordion.appendChild(question);
+
+    const answer = document.createElement('div');
+    answer.classList.add('answer');
+    accordion.appendChild(answer);
+
+    question.addEventListener("click", function () {
+        question.classList.toggle("active-question");
+
+        const questionId = this.getAttribute('data-id');
+        const newUrl = `https://jsonplaceholder.typicode.com/posts/${questionId}`;
+
+        fetchFnc(newUrl, function (newData) {
+            answer.innerHTML = `<p>${newData.body}</p>`;
+            answer.classList.toggle("activeAnswer");
+        });
+    });
+}
+
+// cookies
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieWrapper = document.getElementById("cookie-wrapper");
+    const acceptBtn = document.getElementById("acceptCookies");
+    const declineBtn = document.getElementById("declineCookies");
+    const cookieClose = document.getElementById("cookie-close");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      cookieWrapper.style.display = "block";
+    }
+  
+    acceptBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "accepted");
+      cookieWrapper.style.display = "none";
+    });
+  
+    declineBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "declined");
+      cookieWrapper.style.display = "none";
+    });
+
+    cookieClose.addEventListener("click", ()=>{
+        cookieWrapper.style.display = "none";
+    });
+});  

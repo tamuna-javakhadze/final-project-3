@@ -52,6 +52,16 @@
     </header>
 
     <main>
+        <div class="cookie-wrapper" id="cookie-wrapper">
+            <div class="cookieBanner">
+                <p class="cookie-text">We use cookies to improve your experience. Do you accept cookies?</p>
+                <button class="cookie-button accept" id="acceptCookies">Accept</button>
+                <button class="cookie-button decline" id="declineCookies">Decline</button>
+                <button class="close-button" id="cookie-close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+        </div>
         
         <div id="scroll-up-button">
             <i class="fa-solid fa-circle-up scroll-up"></i>
@@ -83,7 +93,7 @@
                     <img src="images/promotional.png">
                 </div>
                 <div>
-                    <h2 class="purple-title">We offer</h2>
+                    <h2 class="purple-title we-offer">We offer</h2>
                     <ul class="ul-promote">
                         <b></b>
                         <li class="li-promote big-text">1000s of high quality <b>histology slides</b> and illustrations</li>
@@ -101,7 +111,7 @@
 
         <section class="team-section">
             <div class="width team-flex slide-up"">
-                <h2 class="purple-title center">Ouer experts</h2>
+                <h2 class="purple-title center">Our experts</h2>
                 <p class="big-text center">Our team consists of diverse, talented individuals to 
                     create HistoScope's unique, interdisciplinary perspective on histology education.
                 </p>
@@ -154,84 +164,7 @@
             <div class="width faq slide-up">
                 <h2 class="purple-title center">FAQs</h2>
 
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Are there any clinical correlations included in histological articles?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>HistoScope provides normal histology as well as pathology with clinical correlations</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Do you offer any user community or forum?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p class="answer">Currently, we do not have a forum. However, we are actively considering implementing one for future updates. In the meantime, feel free to reach out to us on social media or via email.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Are there any discounts for students?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p class="answer">Yes, we offer a discount for students. You can apply the student discount code during checkout to receive a reduced price on the premium subscription.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Can I download videos?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>At this time, our educational videos are available for streaming only. We are considering offering offline viewing options for premium members in future updates.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Are quizzes available for free?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>You can take the quiz for free to test your overal knowledge in histology, however to text your knowledge for specific topics you need tos subscribe for premium service.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Is the content for students or for professionals?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>Our content is for both students and professionals.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>What does the premium subscription include?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>The premium subscription gives you full access to all content on the website, including 100% of histological slides, all the videos and articles, and extra quizzes. You will also receive priority customer support.</p>
-                    </div>
-                </div>
-
-                <div class="q&a-block">
-                    <div class="question">
-                        <p>Can I cancel my premium subscription and when?</p>
-                        <i class="fa-solid fa-sort-down"></i>
-                    </div>
-                    <div class="answer">
-                        <p>Yes, you can cancel your subscription at any time. Simply go to your account settings, click on the "Subscriptions" tab, and follow the instructions to cancel. Your subscription will remain active until the end of the billing cycle.</p>
-                    </div>
+                <div class="faq-wraper" id="accordion">
                 </div>
             </div>
         </section>
@@ -240,7 +173,7 @@
     <footer>
         <div class="width">
             <div class="footer-wraper">
-                <div class="HistoScope-footer">
+                <div class="footer-block">
                     <h2 class="footer-title">HistoScope</h2>
                     <ul class="footer-ul">
                         <li><a href="">For medical students</a></li>
@@ -249,7 +182,7 @@
                         <li><a href="">Pricing</a></li>
                     </ul>
                 </div>
-                <div class="company-footer">
+                <div class="footer-block">
                     <h2 class="footer-title">Company</h2>
                     <ul class="footer-ul">
                         <li><a href="">About us</a></li>
@@ -258,7 +191,7 @@
                         <li><a href="">Press</a></li>
                     </ul>
                 </div>
-                <div class="language-footer">
+                <div class="footer-block">
                     <h2 class="footer-title">HistoScope in</h2>
                     <ul class="footer-ul">
                         <li><a href="">Georgian</a></li>
@@ -267,7 +200,7 @@
                         <li><a href="">Spanish</a></li>
                     </ul>
                 </div>
-                <div class="support-footer">
+                <div class="footer-block">
                     <h2 class="footer-title">Support</h2>
                     <ul class="footer-ul">
                         <li><a href="">Latest on COVID-19</a></li>

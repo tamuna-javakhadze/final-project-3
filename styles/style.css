@@ -111,6 +111,63 @@
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/* cookies */
+.cookie-wrapper{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.cookie-wrapper.active-cookie{
+    display: none;
+}
+.cookieBanner{
+    position: relative;
+    background-color: rgb(40, 31, 75);
+    padding: 20px;
+    text-align: center;
+    font-family: "Balsamiq Sans", sans-serif;
+    color: white;
+}
+.cookie-text{
+    margin-bottom: 10px;
+}
+.cookie-button{
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: "Balsamiq Sans", sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+.accept:hover{
+    background-color: var(--green);
+}
+.decline:hover{
+    background-color: var(--purple-background);
+}
+.close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.fa-circle-xmark{
+    font-size: 25px;
+    color: white;
+    transition: color 0.5s ease-in-out;
+}
+.fa-circle-xmark:hover{
+    color: var(--green);
+}
+
 /* scroll and slide */
 .scroll-up{
     display: none;
@@ -149,17 +206,23 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    transition: color 0.5s ease-in-out;
+    padding: 0;
 }
 #arrow-left{
-    left: 20px;
+    left: 1%;
 }
 #arrow-right{
-    right: 20px;
+    right: 1%;
 }
 .fa-chevron-left, .fa-chevron-right{
     font-size: 40px;
     color: var(--purple-background);
     cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.fa-chevron-left:hover, .fa-chevron-right:hover{
+    color: var(--green);
 }
 .slider-content{
     overflow: hidden;
@@ -221,7 +284,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 100px;
+    left: 10%;
 }
 .hero-title{
     font-family: "Balsamiq Sans", sans-serif;
@@ -272,12 +335,10 @@
 }
 #team{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .name-avatar-wraper{
-    width: 16.666%;
-    padding: 0 35px 0 35px;
     display: flex;
     justify-content: space-around;
 }
@@ -323,39 +384,51 @@
 }
 
 /* FAQ section */
-.faq-section{
+.faq-section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.question{
+.question {
     color: var(--grey);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: left;
     outline: none;
-    font-size: 15px;
     transition: 0.4s;
     font-family: "Nunito", sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
 }
-.answer{
+.answer {
     padding: 0 18px;
     background-color: white;
-    overflow: hidden;
     font-family: "Nunito", sans-serif;
+    color: var(--grey);
     font-size: 20px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    border: none;
 }
-.active-question, .question:hover {
-  background-color: var(--green);
-  color: white;
-  transition: all 0.7s ease;
+.answer.activeAnswer {
+    max-height: 300px;
+    padding: 18px;
+    border: solid 1px var(--green);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.question:hover {
+    background-color: var(--green);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.question.active-question{
+    background-color: var(--green);
+    color: white;
 }
 
 /* pricing */
