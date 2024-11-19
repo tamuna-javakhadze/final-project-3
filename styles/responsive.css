@@ -34,6 +34,11 @@
         width: 60%;
     }
 }
+@media only screen and (max-width:480px){
+    .dots-wraper{
+        bottom: 20px;
+    }
+}
 
 /* promotion section */
 @media only screen and (max-width:1000px){
@@ -125,15 +130,6 @@
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* footer */
 @media only screen and (max-width: 768px){
