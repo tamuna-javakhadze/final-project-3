@@ -1,4 +1,18 @@
 'use strict'
+// export/import საერთოდ არ გამომივიდა, მთლიან ფუნქციონალს მიფუჭებდა ამიტომ საერთოდ აღარ გამოვიყენე და 
+// ამიტომ მაქ დაკომენტარებული რომ თქვენც ნახოთ რა მაქ შეცდომა:
+
+// import { burger, header, navUl, headerWraper } from "./burger.js";
+
+// burger.addEventListener('click', function(){
+//     header.classList.toggle("toggle-header");
+//     navUl.classList.toggle("toggle-nav-ul");
+//     headerWraper.classList.toggle("toggle-header-wraper");
+//     burger.classList.toggle("x");
+// });
+
+// ეს იმპორტირებული ცვლადები burger.js-შია გაწერილი
+// html-შიც ინდექსის სკრიპტ ტეგშიც type = "module"-ის გაწერაც არ მავიწყდებოდა
 
 // burger
 let burger = document.getElementById("burger");
