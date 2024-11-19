@@ -92,7 +92,7 @@ let currentPage = 1;
 let post = document.getElementById("team");
 
 function getUsers(page){
-    fetch("https://reqres.in/api/users?page=" + page, {
+    fetch("https://reqres.in/api/users?page=?" + page, {
     METHOD: "GET"
 })
 .then(function(text){
@@ -171,9 +171,8 @@ function fetchFnc(url, callback) {
         });
 }
 
-fetchFnc('https://jsonplaceholder.typicode.com/posts', function (data) {
-    const limitedData = data.slice(0, 12);
-    limitedData.forEach(item => createPost(item));
+fetchFnc('https://jsonplaceholder.typicode.com/posts?_limit=12', function (data) {
+    data.forEach(item => createPost(item));
 });
 
 function createPost(item){
