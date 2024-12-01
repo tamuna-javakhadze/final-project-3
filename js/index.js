@@ -92,7 +92,7 @@ let currentPage = 1;
 let post = document.getElementById("team");
 
 function getUsers(page){
-    fetch("https://reqres.in/api/users?page=?" + page, {
+    fetch("https://reqres.in/api/users?page=" + page, {
     METHOD: "GET"
 })
 .then(function(text){
