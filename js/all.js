@@ -15,17 +15,8 @@
 // html-შიც ინდექსის სკრიპტ ტეგშიც type = "module"-ის გაწერაც არ მავიწყდებოდა
 
 // burger
-let burger = document.getElementById("burger");
-let header = document.getElementById("header");
-let navUl = document.getElementById("nav-ul");
-let headerWraper = document.getElementById("header-wraper");
-
-burger.addEventListener('click', function(){
-    header.classList.toggle("toggle-header");
-    navUl.classList.toggle("toggle-nav-ul");
-    headerWraper.classList.toggle("toggle-header-wraper");
-    burger.classList.toggle("x");
-});
+import burger from './burger.js';
+burger();
 
 // scroll up button
 let scrollUpButton = document.getElementById("scroll-up-button");
